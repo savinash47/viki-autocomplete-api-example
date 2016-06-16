@@ -1,0 +1,42 @@
+.auto-complete {
+  display: inline-block;
+  position: relative; }
+  .auto-complete #data-input {
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    padding: 12px 20px; }
+  .auto-complete .results-container {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    left: 0px;
+    top: 56px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px; }
+    .auto-complete .results-container li {
+      padding: 5px;
+      display: flex;
+      border: 1px solid #eee; }
+      .auto-complete .results-container li img {
+        height: 100px;
+        width: 150px; }
+      .auto-complete .results-container li a {
+        color: #63D1F4;
+        cursor: pointer; }
+      .auto-complete .results-container li a:hover {
+        color: #0099CC;
+        text-decoration: underline; }
+      .auto-complete .results-container li a:not(:first-child):after,
+      .auto-complete .results-container li a:not(:last-child):after {
+        content: " | "; }
+    .auto-complete .results-container li:first-child {
+      border-top-style: none; }
+  .auto-complete .active {
+    display: block; }
+
+/*# sourceMappingURL=main.css.map */

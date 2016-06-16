@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ebates Test</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<div class="auto-complete">
+		<input type="text" placeholder="start typing......" id="data-input" />
+		<ul id="suggestion"></ul>
+	</div>
+	<script type="text/javascript">
+		var input = document.getElementById('data-input');
+		document.getElementById('suggestion').classList.add('results-container');
+
+		input.addEventListener("keyup",function() {
+			var value = input.value;
+			search(value);
+		})
+	</script>
+	<script src="search.js"></script>
+	<script src="showSuggestions.js"></script>
+</body>
+</html>

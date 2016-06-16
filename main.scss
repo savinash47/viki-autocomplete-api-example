@@ -1,0 +1,60 @@
+.auto-complete {
+	display: inline-block;
+	position: relative;
+
+	#data-input {
+		width: 400px;
+		height: 30px;
+		font-size: 20px;
+		font-family: sans-serif;
+		border-radius: 5px;
+		border: 2px solid #eee;
+		padding: 12px 20px;
+	}
+
+	.results-container {
+		display: none;
+		position: absolute;
+		list-style-type: none;
+		left: 0px;
+ 		top: 56px;
+  		right: 0px;
+  		margin: 0px;
+  		padding: 0px;
+
+		li {
+			padding: 5px;
+			display: flex;
+			border: 1px solid #eee;
+			img {
+				height:100px;
+				width: 150px;
+			}
+			a{	
+				color: #63D1F4;
+				cursor: pointer;
+			}
+			a:hover{
+				color: #0099CC;
+				text-decoration: underline;
+			}
+			a:not(:first-child):after,
+			a:not(:last-child):after{
+				content: " | ";
+			}
+			
+		}
+
+		li:first-child {
+				border-top-style: none;
+			}
+
+	}
+	
+	.active {
+		display: block;
+	}
+}
+
+
+
